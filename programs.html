@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs | Madrasah Bait-ul-Salam</title>
+    <!-- Fonts, CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Arabic:wght@400;600;700&family=Inter:wght@400;500;600&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .program-detail-card {
+            background: white; border-radius: 12px; padding: 40px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); display: flex; gap: 30px; align-items: start;
+        }
+        .program-detail-card i { font-size: 3rem; color: var(--accent-gold); }
+        @media (max-width: 768px) { .program-detail-card { flex-direction: column; text-align: center; align-items: center; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="images/islamic_logo.png" alt="Logo">
+                    <span class="logo-text urdu-text">مدرسہ بیت السلام</span>
+                </div>
+                <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+                <ul class="nav-links urdu-text">
+                    <li><a href="index.html">ہوم</a></li>
+                    <li><a href="about.html">ہمارے بارے میں</a></li>
+                    <li><a href="programs.html" class="active">پروگرامز</a></li>
+                    <li><a href="blog.html">بلاگ</a></li>
+                    <li><a href="contact.html">رابطہ کریں</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h1 class="urdu-text">تعلیمی پروگرامز</h1>
+            <p class="urdu-text">دین اور دنیا کی کامیابی کی ضمانت</p>
+        </div>
+    </div>
+
+    <section class="section-padding container">
+        
+        <div id="hifz" class="program-detail-card">
+            <i class="fas fa-quran"></i>
+            <div>
+                <h2 class="urdu-text" style="color: var(--primary-green); margin-bottom: 15px;">حفظ القرآن</h2>
+                <p class="urdu-text" style="font-size: 1.1rem; line-height: 1.8;">ہمارے ہاں حفظ القرآن کی کلاسز میں بچوں کو نہایت محبت اور توجہ کے ساتھ قرآن پاک حفظ کروایا جاتا ہے۔ ماہر قراء کی زیر نگرانی طلبہ روزانہ کی بنیاد پر اپنا سبق اور منزل سناتے ہیں۔</p>
+            </div>
+        </div>
+
+        <div id="nazra" class="program-detail-card">
+            <i class="fas fa-book-open"></i>
+            <div>
+                <h2 class="urdu-text" style="color: var(--primary-green); margin-bottom: 15px;">ناظرہ قرآن و کتب</h2>
+                <p class="urdu-text" style="font-size: 1.1rem; line-height: 1.8;">ناظرہ قرآن قواعد اور تجوید کے ساتھ پڑھنے پر خاص زور دیا جاتا ہے۔ نماز، دعائیں اور بنیادی عقائد کی کتب (کتب 1 تا 8) پڑھائی جاتی ہیں۔</p>
+            </div>
+        </div>
+
+        <div id="school" class="program-detail-card">
+            <i class="fas fa-school"></i>
+            <div>
+                <h2 class="urdu-text" style="color: var(--primary-green); margin-bottom: 15px;">سکول سسٹم (کلاس 1 تا 8)</h2>
+                <p class="urdu-text" style="font-size: 1.1rem; line-height: 1.8;">دینی تعلیم کے ساتھ ساتھ ہمارے ہاں سکول کی کلاسز میں حکومت کا منظور شدہ نصاب پڑھایا جاتا ہے۔ اردو، ریاضی، اور سائنس کے مضامین شامل ہیں۔</p>
+            </div>
+        </div>
+
+        <div id="extra" class="program-detail-card">
+            <i class="fas fa-laptop-code"></i>
+            <div>
+                <h2 class="urdu-text" style="color: var(--primary-green); margin-bottom: 15px;">کمپیوٹر + انگلش لینگویج</h2>
+                <p class="urdu-text" style="font-size: 1.1rem; line-height: 1.8;">انگریزی زُبان کی بول چال اور کمپیوٹر کی بنیادی تعلیم (MS Office، انٹرنیٹ کا محفوظ استعمال) خاص طور پر نصاب کا حصہ ہے تاکہ بچے عصرِ حاضر میں پیچھے نہ رہیں۔</p>
+            </div>
+        </div>
+        
+        <div class="program-detail-card">
+            <i class="fas fa-bed"></i>
+            <div>
+                <h2 class="urdu-text" style="color: var(--primary-green); margin-bottom: 15px;">رہائش کی سہولت (Residential)</h2>
+                <p class="urdu-text" style="font-size: 1.1rem; line-height: 1.8;">دور دراز کے طلبہ کے لیے آرام دہ رہائش اور معیاری کھانے پینے کا بہترین انتظام موجود ہے۔</p>
+            </div>
+        </div>
+
+        <!-- Admission CTA Form inclusion trigger -->
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="index.html#admission" class="btn btn-primary urdu-text" style="font-size: 1.3rem;">داخلہ فارم کے لیے یہاں کلک کریں</a>
+        </div>
+
+    </section>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/923353585999" target="_blank" class="floating-whatsapp" title="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Madrasah Bait-ul-Salam. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
