@@ -695,6 +695,33 @@ footer {
     font-size: 1.1rem;
     margin-bottom: 25px;
   }
+  
+  .hero-btns {
+    gap: 15px;
+  }
+
+  .btn-hero, .btn-whatsapp-hero {
+    width: 100%;
+    max-width: 320px;
+    padding: 15px 20px;
+  }
+
+  .btn-whatsapp-hero {
+    gap: 12px;
+  }
+
+  .btn-whatsapp-hero .main-text {
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+  }
+
+  .btn-hero span {
+    margin-bottom: 5px;
+  }
+
+  .btn-hero span.sub-text {
+    margin-top: 5px;
+  }
 
   .section-title {
     font-size: 1.8rem;
