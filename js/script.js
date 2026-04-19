@@ -117,6 +117,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const encodedMessage = encodeURIComponent(message);
       const targetPhone = "923353585999";
       const whatsappUrl = `https://wa.me/${targetPhone}?text=${encodedMessage}`;
+      
+      window.open(whatsappUrl, '_blank');
+    });
+  }
 
   // --- Scroll Animations ---
   const revealElements = document.querySelectorAll('.reveal');
