@@ -10,24 +10,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Anek+Arabic:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
     <header>
         <div class="container">
             <nav>
                 <div class="logo">
-                    <img src="images/islamic_logo.png" alt="Madrasah Bait-ul-Salam Logo">
+                    <img src="images/islamic_logo.png" alt="Logo">
                     <div style="display: flex; flex-direction: column; align-items: start;">
-                        <span class="logo-text urdu-text" style="line-height: 1.2;">مدرسہ بیت السلام</span>
+                        <span class="logo-text urdu-text" style="line-height: 1.2;" data-ur="مدرسہ بیت السلام" data-en="Bait-ul-Salam">مدرسہ بیت السلام</span>
                         <span style="font-size: 0.75rem; color: var(--text-light); font-weight: 500; font-family: 'Inter', sans-serif;">Madrasah Bait-ul-Salam</span>
                     </div>
                 </div>
+                <div class="nav-controls">
+                    <button id="themeToggle" class="theme-toggle" title="Toggle Theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button id="langToggle" class="lang-toggle" title="Switch Language">
+                        <i class="fas fa-globe"></i> English
+                    </button>
+                </div>
                 <div class="menu-toggle"><i class="fas fa-bars"></i></div>
                 <ul class="nav-links urdu-text">
-                    <li><a href="index.html">ہوم</a></li>
-                    <li><a href="about.html">ہمارے بارے میں</a></li>
-                    <li><a href="programs.html">پروگرامز</a></li>
-                    <li><a href="blog.html">بلاگ</a></li>
-                    <li><a href="contact.html" class="active">رابطہ کریں</a></li>
+                    <li><a href="index.html"><span class="lang-ur">ہوم</span><span class="lang-en">Home</span></a></li>
+                    <li><a href="about.html"><span class="lang-ur">ہمارے بارے میں</span><span class="lang-en">About Us</span></a></li>
+                    <li><a href="programs.html"><span class="lang-ur">پروگرامز</span><span class="lang-en">Programs</span></a></li>
+                    <li><a href="blog.html"><span class="lang-ur">بلاگ</span><span class="lang-en">Blog</span></a></li>
+                    <li><a href="contact.html" class="active"><span class="lang-ur">رابطہ کریں</span><span class="lang-en">Contact</span></a></li>
                 </ul>
             </nav>
         </div>
@@ -35,29 +42,47 @@
 
     <section class="page-header">
         <div class="container">
-            <h1 class="urdu-text">ہم سے رابطہ کریں</h1>
-            <p style="font-family: 'Inter', sans-serif;">We are here to help you</p>
+            <h1 class="urdu-text">
+                <span class="lang-ur">ہم سے رابطہ کریں</span>
+                <span class="lang-en">Contact Us</span>
+            </h1>
+            <p style="font-family: 'Inter', sans-serif;">
+                <span class="lang-ur">ہم آپ کی مدد کے لیے حاضر ہیں</span>
+                <span class="lang-en">We are here to help you</span>
+            </p>
         </div>
     </section>
 
     <section class="section-padding container">
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: start;">
-            <div class="contact-info">
-                <h2 class="urdu-text" style="margin-bottom: 25px; color: var(--primary-green);">رابطہ کی تفصیلات</h2>
+            <div class="contact-info reveal">
+                <h2 class="urdu-text" style="margin-bottom: 25px; color: var(--primary-green);">
+                    <span class="lang-ur">رابطہ کی تفصیلات</span>
+                    <span class="lang-en">Contact Details</span>
+                </h2>
                 
                 <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); margin-bottom: 20px;">
                     <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
                         <i class="fas fa-map-marker-alt" style="color: var(--accent-gold); font-size: 1.5rem;"></i>
                         <div>
-                            <h4 class="urdu-text">پتہ</h4>
-                            <p class="urdu-text" style="color: var(--text-light);">مین بائی پاس، کوٹ چھٹہ، ضلع ڈیرہ غازی خان</p>
+                            <h4 class="urdu-text">
+                                <span class="lang-ur">پتہ</span>
+                                <span class="lang-en">Address</span>
+                            </h4>
+                            <p class="urdu-text" style="color: var(--text-light);">
+                                <span class="lang-ur">مین بائی پاس، کوٹ چھٹہ، ضلع ڈیرہ غازی خان</span>
+                                <span class="lang-en">Main Bypass, Kot Chhutta, D.G Khan</span>
+                            </p>
                         </div>
                     </div>
                     
                     <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
                         <i class="fab fa-whatsapp" style="color: #25D366; font-size: 1.5rem;"></i>
                         <div>
-                            <h4 class="urdu-text">واٹس ایپ</h4>
+                            <h4 class="urdu-text">
+                                <span class="lang-ur">واٹس ایپ</span>
+                                <span class="lang-en">WhatsApp</span>
+                            </h4>
                             <p style="color: var(--text-light); font-family: 'Inter', sans-serif; direction: ltr; text-align: left;">+92 335 3585999</p>
                         </div>
                     </div>
@@ -65,21 +90,22 @@
                     <div style="display: flex; align-items: center; gap: 15px;">
                         <i class="fas fa-envelope" style="color: var(--accent-gold); font-size: 1.5rem;"></i>
                         <div>
-                            <h4 class="urdu-text">ای میل</h4>
+                            <h4 class="urdu-text">
+                                <span class="lang-ur">ای میل</span>
+                                <span class="lang-en">Email</span>
+                            </h4>
                             <p style="color: var(--text-light); font-family: 'Inter', sans-serif;">info@madrasahbaitulsalam.com</p>
                         </div>
                     </div>
                 </div>
                 
-                <a href="https://wa.me/923353585999" class="btn btn-whatsapp urdu-text" style="width: 100%;">WhatsApp پر رابطہ کریں</a>
+                <a href="https://wa.me/923353585999" class="btn btn-whatsapp urdu-text" style="width: 100%;" data-ur="WhatsApp پر رابطہ کریں" data-en="Contact on WhatsApp">WhatsApp پر رابطہ کریں</a>
             </div>
 
             <!-- Map Embed -->
             <div class="map-container">
-                <!-- Using a generic DG Khan Kot Chhutta map coordinates embed placeholder -->
-                <iframe src="https://maps.google.com/maps?q=Kot+Chhutta,+Dera+Ghazi+Khan&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0; min-height: 400px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://maps.google.com/maps?q=Kot+Chhutta,+Dera+Ghazi+Khan&t=&z=14&ie=UTF8&iwloc=&output=embed" width="100%" height="450" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy"></iframe>
             </div>
-
         </div>
     </section>
 
@@ -88,8 +114,23 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col" style="padding-left: 30px;">
+                    <div class="logo">
+                        <img src="images/islamic_logo.png" alt="Logo" style="height: 70px; margin-bottom: 15px;">
+                        <div style="display: flex; flex-direction: column; align-items: start;">
+                            <span class="logo-text urdu-text" style="color: white; font-size: 1.8rem; line-height: 1.1;">
+                                <span class="lang-ur">مدرسہ بیت السلام</span>
+                                <span class="lang-en">Bait-ul-Salam</span>
+                            </span>
+                            <span style="font-family: 'Inter', sans-serif; font-size: 0.85rem; color: var(--accent-gold); letter-spacing: 1px;">Madrasah Bait-ul-Salam</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 Madrasah Bait-ul-Salam. All Rights Reserved.</p>
             </div>

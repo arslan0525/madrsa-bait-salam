@@ -16,19 +16,27 @@
         <div class="container">
             <nav>
                 <div class="logo">
-                    <img src="images/islamic_logo.png" alt="Madrasah Bait-ul-Salam Logo">
+                    <img src="images/islamic_logo.png" alt="Logo">
                     <div style="display: flex; flex-direction: column; align-items: start;">
-                        <span class="logo-text urdu-text" style="line-height: 1.2;">مدرسہ بیت السلام</span>
+                        <span class="logo-text urdu-text" style="line-height: 1.2;" data-ur="مدرسہ بیت السلام" data-en="Bait-ul-Salam">مدرسہ بیت السلام</span>
                         <span style="font-size: 0.75rem; color: var(--text-light); font-weight: 500; font-family: 'Inter', sans-serif;">Madrasah Bait-ul-Salam</span>
                     </div>
                 </div>
+                <div class="nav-controls">
+                    <button id="themeToggle" class="theme-toggle" title="Toggle Theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button id="langToggle" class="lang-toggle" title="Switch Language">
+                        <i class="fas fa-globe"></i> English
+                    </button>
+                </div>
                 <div class="menu-toggle"><i class="fas fa-bars"></i></div>
                 <ul class="nav-links urdu-text">
-                    <li><a href="index.html">ہوم</a></li>
-                    <li><a href="about.html">ہمارے بارے میں</a></li>
-                    <li><a href="programs.html" class="active">پروگرامز</a></li>
-                    <li><a href="blog.html">بلاگ</a></li>
-                    <li><a href="contact.html">رابطہ کریں</a></li>
+                    <li><a href="index.html"><span class="lang-ur">ہوم</span><span class="lang-en">Home</span></a></li>
+                    <li><a href="about.html"><span class="lang-ur">ہمارے بارے میں</span><span class="lang-en">About Us</span></a></li>
+                    <li><a href="programs.html" class="active"><span class="lang-ur">پروگرامز</span><span class="lang-en">Programs</span></a></li>
+                    <li><a href="blog.html"><span class="lang-ur">بلاگ</span><span class="lang-en">Blog</span></a></li>
+                    <li><a href="contact.html"><span class="lang-ur">رابطہ کریں</span><span class="lang-en">Contact</span></a></li>
                 </ul>
             </nav>
         </div>
@@ -36,33 +44,52 @@
 
     <section class="page-header">
         <div class="container">
-            <h1 class="urdu-text">تعلیمی پروگرامز</h1>
-            <p style="font-family: 'Inter', sans-serif;">Quality Education for a Brighter Future</p>
+            <h1 class="urdu-text">
+                <span class="lang-ur">تعلیمی پروگرامز</span>
+                <span class="lang-en">Educational Programs</span>
+            </h1>
+            <p style="font-family: 'Inter', sans-serif;">
+                <span class="lang-ur">بہتر مستقبل کے لیے معیاری تعلیم</span>
+                <span class="lang-en">Quality Education for a Brighter Future</span>
+            </p>
         </div>
     </section>
 
     <section class="section-padding container">
-        <div id="extra" class="program-detail-card">
+        <div id="extra" class="program-detail-card reveal">
             <i class="fas fa-laptop-code"></i>
             <div>
-                <h2 class="urdu-text" style="color: var(--primary-green); margin-bottom: 15px;">کمپیوٹر + انگلش لینگویج</h2>
-                <p class="urdu-text" style="font-size: 1.1rem; line-height: 1.8;">انگریزی زُبان کی بول چال اور کمپیوٹر کی بنیادی تعلیم (MS Office، انٹرنیٹ کا محفوظ استعمال) خاص طور پر نصاب کا حصہ ہے تاکہ بچے عصرِ حاضر میں پیچھے نہ رہیں۔</p>
+                <h2 class="urdu-text" style="color: var(--primary-green); margin-bottom: 15px;">
+                    <span class="lang-ur">کمپیوٹر + انگلش لینگویج</span>
+                    <span class="lang-en">Computer & English Language</span>
+                </h2>
+                <p class="urdu-text" style="font-size: 1.1rem; line-height: 1.8;">
+                    <span class="lang-ur">انگریزی زُبان کی بول چال اور کمپیوٹر کی بنیادی تعلیم نصاب کا حصہ ہے۔</span>
+                    <span class="lang-en">English speaking and basic computer literacy are integral parts of our curriculum.</span>
+                </p>
             </div>
         </div>
         
-        <div class="program-detail-card">
+        <div class="program-detail-card reveal reveal-delay-1">
             <i class="fas fa-bed"></i>
             <div>
-                <h2 class="urdu-text" style="color: var(--primary-green); margin-bottom: 15px;">رہائش کی سہولت (Residential)</h2>
-                <p class="urdu-text" style="font-size: 1.1rem; line-height: 1.8;">دور دراز کے طلبہ کے لیے آرام دہ رہائش اور معیاری کھانے پینے کا بہترین انتظام موجود ہے۔</p>
+                <h2 class="urdu-text" style="color: var(--primary-green); margin-bottom: 15px;">
+                    <span class="lang-ur">رہائش کی سہولت</span>
+                    <span class="lang-en">Residential Facility</span>
+                </h2>
+                <p class="urdu-text" style="font-size: 1.1rem; line-height: 1.8;">
+                    <span class="lang-ur">دور دراز کے طلبہ کے لیے آرام دہ رہائش موجود ہے۔</span>
+                    <span class="lang-en">Comfortable accommodation and meals are provided for hostel students.</span>
+                </p>
             </div>
         </div>
 
-        <!-- Admission CTA Form inclusion trigger -->
-        <div style="text-align: center; margin-top: 50px;">
-            <a href="index.html#admission" class="btn btn-primary urdu-text" style="font-size: 1.3rem;">داخلہ فارم کے لیے یہاں کلک کریں</a>
+        <div style="text-align: center; margin-top: 50px;" class="reveal reveal-delay-2">
+            <a href="index.html#admission" class="btn btn-primary urdu-text" style="font-size: 1.3rem;">
+                <span class="lang-ur">داخلہ فارم کے لیے یہاں کلک کریں</span>
+                <span class="lang-en">Apply for Admission</span>
+            </a>
         </div>
-
     </section>
 
     <!-- Floating WhatsApp -->
@@ -70,8 +97,23 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col" style="padding-left: 30px;">
+                    <div class="logo">
+                        <img src="images/islamic_logo.png" alt="Logo" style="height: 70px; margin-bottom: 15px;">
+                        <div style="display: flex; flex-direction: column; align-items: start;">
+                            <span class="logo-text urdu-text" style="color: white; font-size: 1.8rem; line-height: 1.1;">
+                                <span class="lang-ur">مدرسہ بیت السلام</span>
+                                <span class="lang-en">Bait-ul-Salam</span>
+                            </span>
+                            <span style="font-family: 'Inter', sans-serif; font-size: 0.85rem; color: var(--accent-gold); letter-spacing: 1px;">Madrasah Bait-ul-Salam</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 Madrasah Bait-ul-Salam. All Rights Reserved.</p>
             </div>

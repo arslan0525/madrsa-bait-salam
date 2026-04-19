@@ -73,16 +73,21 @@
                     </div>
                 </div>
                 
-                <div class="menu-toggle">
-                    <i class="fas fa-bars"></i>
+                <div class="nav-controls">
+                    <button id="themeToggle" class="theme-toggle" title="Toggle Theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button id="langToggle" class="lang-toggle" title="Switch Language">
+                        <i class="fas fa-globe"></i> English
+                    </button>
                 </div>
-                
+                <div class="menu-toggle"><i class="fas fa-bars"></i></div>
                 <ul class="nav-links urdu-text">
-                    <li><a href="index.html" class="active">ہوم</a></li>
-                    <li><a href="about.html">ہمارے بارے میں</a></li>
-                    <li><a href="programs.html">پروگرامز</a></li>
-                    <li><a href="blog.html">بلاگ</a></li>
-                    <li><a href="contact.html">رابطہ کریں</a></li>
+                    <li><a href="index.html" class="active"><span class="lang-ur">ہوم</span><span class="lang-en">Home</span></a></li>
+                    <li><a href="about.html"><span class="lang-ur">ہمارے بارے میں</span><span class="lang-en">About Us</span></a></li>
+                    <li><a href="programs.html"><span class="lang-ur">پروگرامز</span><span class="lang-en">Programs</span></a></li>
+                    <li><a href="blog.html"><span class="lang-ur">بلاگ</span><span class="lang-en">Blog</span></a></li>
+                    <li><a href="contact.html"><span class="lang-ur">رابطہ کریں</span><span class="lang-en">Contact</span></a></li>
                 </ul>
             </nav>
         </div>
@@ -91,20 +96,31 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1 class="urdu-text" style="margin-bottom: 0;">مدرسہ بیت السلام</h1>
+            <h1 class="urdu-text" style="margin-bottom: 0;">
+                <span class="lang-ur">مدرسہ بیت السلام</span>
+                <span class="lang-en">Madrasah Bait-ul-Salam</span>
+            </h1>
             <p style="font-family: 'Inter', sans-serif; font-size: 1.2rem; color: var(--accent-gold); margin-bottom: 20px; font-weight: 500; letter-spacing: 2px;">Madrasah Bait-ul-Salam</p>
-            <p class="urdu-text" style="font-size: 1.3rem; margin-bottom: 10px; font-weight: 600;">ایک ایسا ادارہ جہاں علم کا نور اور تربیت کی خوشبو ہر طالب علم کا مقدر بنتی ہے۔</p>
-            <p style="font-family: 'Inter', sans-serif; font-size: 1rem; margin-bottom: 40px; color: #ddd;">Shaping the future with Islamic values and modern excellence.</p>
+            <p class="urdu-text" style="font-size: 1.3rem; margin-bottom: 10px; font-weight: 600;">
+                <span class="lang-ur">ایک ایسا ادارہ جہاں علم کا نور اور تربیت کی خوشبو ہر طالب علم کا مقدر بنتی ہے۔</span>
+                <span class="lang-en">An institution where the light of knowledge and values shape every student's destiny.</span>
+            </p>
+            <p style="font-fa                <span class="lang-en">Combining Islamic values with modern academic excellence.</span>
+            </p>
             <div class="hero-btns">
                 <a href="#admission" class="btn btn-primary btn-hero urdu-text">
-                    <span style="font-size: 1.2rem;">داخلہ فارم</span>
+                    <span style="font-size: 1.2rem;" class="lang-ur">داخلہ فارم</span>
+                    <span style="font-size: 1.2rem;" class="lang-en">Admission Form</span>
                     <span class="sub-text">Admission Form</span>
                 </a>
                 <a href="https://wa.me/923353585999" target="_blank" class="btn btn-whatsapp btn-whatsapp-hero urdu-text">
                     <i class="fab fa-whatsapp" style="font-size: 1.5rem;"></i>
                     <div class="text-wrap">
-                        <span class="main-text">ابھی بات کریں</span>
-                        <span style="font-size: 0.75rem; font-family: 'Inter', sans-serif; opacity: 0.9;">WhatsApp Now</span>
+                        <span class="main-text">
+                            <span class="lang-ur">ابھی بات کریں</span>
+                            <span class="lang-en">WhatsApp Now</span>
+                        </span>
+                        <span style="font-size: 0.75rem; font-family: 'Inter', sans-serif; opacity: 0.9;">+92 335 3585999</span>
                     </div>
                 </a>
             </div>
@@ -114,96 +130,118 @@
     <!-- Management / Supervision Section -->
     <section class="section-padding container">
         <h2 class="section-title urdu-text">
-            انتظامیہ و سرپرستی
-            <span>Management & Supervision</span>
+            <span class="lang-ur">انتظامیہ و سرپرستی</span>
+            <span class="lang-en">Management & Supervision</span>
         </h2>
         
         <div class="mgmt-grid">
-            <!-- Supervision Role -->
-            <div class="mgmt-card" style="border-bottom: 6px solid var(--accent-gold);">
+            <!-- Supervisor Role -->
+            <div class="mgmt-card reveal reveal-delay-1" style="border-bottom: 6px solid var(--accent-gold);">
                 <div class="mgmt-card-img-wrap">
-                    <img src="images/buzarg.jpg" alt="Hazrat Maulana - Spiritual Supervisor of Madrasah Bait-ul-Salam">
+                    <img src="images/buzarg.jpg" alt="Hazrat Maulana - Spiritual Supervisor">
                 </div>
-                <h3 class="urdu-text" style="color: var(--primary-green); font-size: 1.8rem; margin-bottom: 5px;">زیرِ سرپرستی</h3>
-                <p style="font-family: 'Inter', sans-serif; color: var(--accent-gold); font-size: 0.9rem; font-weight: 600; margin-bottom: 20px; letter-spacing: 1px; text-transform: uppercase;">Under Spiritual Guidance</p>
+                <h3 class="urdu-text" style="color: var(--primary-green); font-size: 1.8rem; margin-bottom: 5px;">
+                    <span class="lang-ur">زیرِ سرپرستی</span>
+                    <span class="lang-en">Under Supervision</span>
+                </h3>
+                <p style="font-family: 'Inter', sans-serif; color: var(--accent-gold); font-size: 0.9rem; font-weight: 600; margin-bottom: 20px; letter-spacing: 1px; text-transform: uppercase;">
+                    <span class="lang-ur">روحانی تربیت و نگرانی</span>
+                    <span class="lang-en">Under Spiritual Guidance</span>
+                </p>
                 <div style="height: 2px; width: 50px; background: #eee; margin-bottom: 20px;"></div>
-                <p class="urdu-text" style="color: var(--text-light); font-size: 1.1rem; line-height: 1.8; text-align: center;">ہمارے اکابرین کی دعاؤں اور اخلاص کا نتیجہ ہے کہ آج یہ ادارہ ہزاروں بچوں کے مستقبل کو سنوارنے میں مصروف ہے۔ ہماری بنیاد تقویٰ اور سنتِ نبوی ﷺ پر ہے۔</p>
+                <p class="urdu-text" style="color: var(--text-light); font-size: 1.1rem; line-height: 1.8; text-align: center;">
+                    <span class="lang-ur">ہمارے اکابرین کی دعاؤں اور اخلاص کا نتیجہ ہے کہ آج یہ ادارہ ہزاروں بچوں کے مستقبل کو سنوارنے میں مصروف ہے۔ ہماری بنیاد تقویٰ اور سنتِ نبوی ﷺ پر ہے۔</span>
+                    <span class="lang-en">Our institution thrives on the prayers and sincerity of our elders, shaping the future of thousands. Our foundation is built on Taqwa and the Sunnah of Prophet Muhammad (PBUH).</span>
+                </p>
             </div>
 
             <!-- Mohtamam Role -->
-            <div class="mgmt-card" style="border-bottom: 6px solid var(--primary-green);">
+            <div class="mgmt-card reveal reveal-delay-2" style="border-bottom: 6px solid var(--primary-green);">
                 <div class="mgmt-card-img-wrap">
-                    <img src="images/molna asif jamal.jpeg" alt="Maulana Asif Jamal - Principal of Madrasah Bait-ul-Salam">
+                    <img src="images/molna asif jamal.jpeg" alt="Maulana Asif Jamal - Principal">
                 </div>
-                <h3 class="urdu-text" style="color: var(--primary-green); font-size: 1.8rem; margin-bottom: 5px;">مولانا آصف جمال</h3>
-                <p style="font-family: 'Inter', sans-serif; color: var(--secondary-green); font-size: 0.9rem; font-weight: 600; margin-bottom: 20px; letter-spacing: 1px; text-transform: uppercase;">Mohtamam / Principal</p>
+                <h3 class="urdu-text" style="color: var(--primary-green); font-size: 1.8rem; margin-bottom: 5px;">
+                    <span class="lang-ur">مولانا آصف جمال</span>
+                    <span class="lang-en">Maulana Asif Jamal</span>
+                </h3>
+                <p style="font-family: 'Inter', sans-serif; color: var(--secondary-green); font-size: 0.9rem; font-weight: 600; margin-bottom: 20px; letter-spacing: 1px; text-transform: uppercase;">
+                    <span class="lang-ur">مہتمم / پرنسپل</span>
+                    <span class="lang-en">Mohtamam / Principal</span>
+                </p>
                 <div style="height: 2px; width: 50px; background: #eee; margin-bottom: 20px;"></div>
-                <p class="urdu-text" style="color: var(--text-light); font-size: 1.1rem; line-height: 1.8; text-align: center;">ادارے کا انتظام ایک مشن سمجھ کر کیا جاتا ہے۔ ہمارا مقصد صرف تعلیم نہیں بلکہ ایسی کردار سازی ہے کہ آپ کا بچہ معاشرے کا ایک معتبر اور خوش اخلاق انسان بنے۔</p>
+                <p class="urdu-text" style="color: var(--text-light); font-size: 1.1rem; line-height: 1.8; text-align: center;">
+                    <span class="lang-ur">ادارے کا انتظام ایک مشن سمجھ کر کیا جاتا ہے۔ ہمارا مقصد صرف تعلیم نہیں بلکہ ایسی کردار سازی ہے کہ آپ کا بچہ معاشرے کا ایک معتبر اور خوش اخلاق انسان بنے۔</span>
+                    <span class="lang-en">Our management is driven by a mission. Our goal is not just education, but character building to ensure your child becomes a respected and well-mannered member of society.</span>
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- Faculty / Teachers Section -->
+    <!-- Faculty Section -->
     <section class="section-padding bg-light" style="background-color: #f9f9f9;">
         <div class="container">
             <h2 class="section-title urdu-text">
-                اساتذہ کرام
-                <span>Our Expert Faculty</span>
+                <span class="lang-ur">اساتذہ کرام</span>
+                <span class="lang-en">Our Expert Faculty</span>
             </h2>
             <div class="faculty-grid">
-                <div class="faculty-card">
+                <div class="faculty-card reveal">
                     <div class="faculty-img-wrap">
                         <img src="images/islamic_logo.png" style="opacity: 0.5; padding: 20px;" alt="Teacher">
                     </div>
-                    <h4 class="urdu-text" style="font-size: 1.4rem;">قاری محمد احمد</h4>
-                    <p style="color: var(--accent-gold); font-weight: 600; margin-bottom: 10px;">ماہرِ تجوید و حفظ</p>
-                    <p class="urdu-text" style="font-size: 0.95rem; color: var(--text-light);">گزشتہ 10 سالوں سے بچوں کو قرآنی تعلیمات سے روشناس کروا رہے ہیں۔</p>
+                    <h4 class="urdu-text" style="font-size: 1.4rem;">
+                        <span class="lang-ur">قاری محمد احمد</span>
+                        <span class="lang-en">Qari Muhammad Ahmed</span>
+                    </h4>
+                    <p style="color: var(--accent-gold); font-weight: 600; margin-bottom: 10px;">
+                        <span class="lang-ur">ماہرِ تجوید و حفظ</span>
+                        <span class="lang-en">Expert in Tajweed & Hifz</span>
+                    </p>
                 </div>
-                <div class="faculty-card">
+                <div class="faculty-card reveal reveal-delay-1">
                     <div class="faculty-img-wrap">
                         <img src="images/islamic_logo.png" style="opacity: 0.5; padding: 20px;" alt="Teacher">
                     </div>
-                    <h4 class="urdu-text" style="font-size: 1.4rem;">ماسٹر زاہد محمود</h4>
-                    <p style="color: var(--accent-gold); font-weight: 600; margin-bottom: 10px;">سائنس و ریاضی (سکول سیکشن)</p>
-                    <p class="urdu-text" style="font-size: 0.95rem; color: var(--text-light);">جدید عصری تعلیم اور سائنسی علوم میں مہارت رکھنے والے تجربہ کار استاد۔</p>
-                </div>
-                <div class="faculty-card">
-                    <div class="faculty-img-wrap">
-                        <img src="images/islamic_logo.png" style="opacity: 0.5; padding: 20px;" alt="Teacher">
-                    </div>
-                    <h4 class="urdu-text" style="font-size: 1.4rem;">حافظ عمیر فاروق</h4>
-                    <p style="color: var(--accent-gold); font-weight: 600; margin-bottom: 10px;">کمپیوٹر انسٹرکٹر</p>
-                    <p class="urdu-text" style="font-size: 0.95rem; color: var(--text-light);">بچوں کو آئی ٹی اور جدید ٹیکنالوجی سے لیس کرنے کے لیے کوشاں۔</p>
+                    <h4 class="urdu-text" style="font-size: 1.4rem;">
+                        <span class="lang-ur">ماسٹر زاہد محمود</span>
+                        <span class="lang-en">Master Zahid Mahmood</span>
+                    </h4>
+                    <p style="color: var(--accent-gold); font-weight: 600; margin-bottom: 10px;">
+                        <span class="lang-ur">سائنس و ریاضی (سکول سیکشن)</span>
+                        <span class="lang-en">Science & Mathematics</span>
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Info Segments Section -->
-    <section class="container pb-0" style="padding-bottom: 40px;">
+    <!-- Info Segments -->
+    <section class="container" style="padding: 60px 0;">
         <div class="info-segments-grid">
-            <div class="info-segment" style="border-right: 4px solid var(--primary-green);">
+            <div class="info-segment reveal" style="border-right: 4px solid var(--primary-green);">
                 <div class="icon" style="color: var(--primary-green);"><i class="fas fa-chalkboard-teacher"></i></div>
                 <div class="text-content">
-                    <h4 class="urdu-text">کلاس رومز</h4>
-                    <span class="en-label">Classrooms</span>
-                    <p class="urdu-text" style="color: var(--text-light); font-size: 0.95rem;">جہاں طلبہ تعلیم حاصل کرتے ہیں</p>
+                    <h4 class="urdu-text">
+                        <span class="lang-ur">کلاس رومز</span>
+                        <span class="lang-en">Classrooms</span>
+                    </h4>
+                    <p class="urdu-text" style="color: var(--text-light); font-size: 0.95rem;">
+                        <span class="lang-ur">جہاں طلبہ تعلیم حاصل کرتے ہیں</span>
+                        <span class="lang-en">Modern learning environment</span>
+                    </p>
                 </div>
             </div>
-            <div class="info-segment" style="border-right: 4px solid var(--accent-gold);">
+            <div class="info-segment reveal reveal-delay-1" style="border-right: 4px solid var(--accent-gold);">
                 <div class="icon" style="color: var(--accent-gold);"><i class="fas fa-book-reader"></i></div>
                 <div class="text-content">
-                    <h4 class="urdu-text">جائے تعلیم</h4>
-                    <span class="en-label">Study Area</span>
-                    <p class="urdu-text" style="color: var(--text-light); font-size: 0.95rem;">پرسکون مطالعہ کا ماحول</p>
-                </div>
-            </div>
-            <div class="info-segment" style="border-right: 4px solid var(--secondary-green);">
-                <div class="icon" style="color: var(--secondary-green);"><i class="fas fa-bed"></i></div>
-                <div class="text-content">
-                    <h4 class="urdu-text">رہائش</h4>
-                    <span class="en-label">Hostel Facility</span>
-                    <p class="urdu-text" style="color: var(--text-light); font-size: 0.95rem;">بہترین رہائشی سہولت</p>
+                    <h4 class="urdu-text">
+                        <span class="lang-ur">جائے تعلیم</span>
+                        <span class="lang-en">Study Area</span>
+                    </h4>
+                    <p class="urdu-text" style="color: var(--text-light); font-size: 0.95rem;">
+                        <span class="lang-ur">پرسکون مطالعہ کا ماحول</span>
+                        <span class="lang-en">Peaceful study environment</span>
+                    </p>
                 </div>
             </div>
         </div>
@@ -212,28 +250,201 @@
     <!-- Programs Section -->
     <section class="section-padding container">
         <h2 class="section-title urdu-text">
-            ہمارے نمایاں پروگرامز
-            <span>Our Featured Programs</span>
+            <span class="lang-ur">ہمارے نمایاں پروگرامز</span>
+            <span class="lang-en">Our Featured Programs</span>
         </h2>
         <div class="cards-grid">
-            <div class="card">
-                <div class="card-img-wrap"><img src="images/hifz_icon.png" alt="Hifz-ul-Quran classes at Madrasah Bait-ul-Salam"></div>
+            <div class="card reveal">
+                <div class="card-img-wrap"><img src="images/hifz_icon.png" alt="Hifz-ul-Quran classes"></div>
                 <div class="card-content">
-                    <h3 class="card-title urdu-text">حفظ القرآن</h3>
-                    <p class="card-desc urdu-text">طلبہ محنت اور لگن سے حفظ کر رہے ہیں، معیاری اور بہترین ماحول۔</p>
-                    <a href="programs.html#hifz" class="btn btn-secondary urdu-text">مزید جانیں</a>
+                    <h3 class="card-title urdu-text">
+                        <span class="lang-ur">حفظ القرآن</span>
+                        <span class="lang-en">Hifz-ul-Quran</span>
+                    </h3>
+                    <p class="card-desc urdu-text">
+                        <span class="lang-ur">طلبہ محنت اور لگن سے حفظ کر رہے ہیں، معیاری اور بہترین ماحول۔</span>
+                        <span class="lang-en">Students memorizing Quran with dedication in a prime environment.</span>
+                    </p>
+                    <a href="programs.html" class="btn btn-secondary urdu-text">
+                        <span class="lang-ur">مزید جانیں</span>
+                        <span class="lang-en">Learn More</span>
+                    </a>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-img-wrap"><img src="images/hifz_icon.png" alt="Nazra Quran reading session"></div>
+            <div class="card reveal reveal-delay-1">
+                <div class="card-img-wrap"><img src="images/school_icon.png" alt="School classes"></div>
                 <div class="card-content">
-                    <h3 class="card-title urdu-text">ناظرہ قرآن</h3>
-                    <p class="card-desc urdu-text">تجوید اور قواعد کے ساتھ قرآن پاک پڑھنے کی تربیت۔</p>
-                    <a href="programs.html#nazra" class="btn btn-secondary urdu-text">مزید جانیں</a>
+                    <h3 class="card-title urdu-text">
+                        <span class="lang-ur">سکول کی کلاسز (1 تا 8)</span>
+                        <span class="lang-en">School Classes (1 to 8)</span>
+                    </h3>
+                    <p class="card-desc urdu-text">
+                        <span class="lang-ur">جدید تعلیمی نصاب، ماہر اساتذہ کے زیرِ نگرانی بہترین تعلیم۔</span>
+                        <span class="lang-en">Modern academic syllabus under the guidance of expert teachers.</span>
+                    </p>
+                    <a href="programs.html" class="btn btn-secondary urdu-text">
+                        <span class="lang-ur">مزید جانیں</span>
+                        <span class="lang-en">Learn More</span>
+                    </a>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-img-wrap"><img src="images/school_icon.png" alt="School classes for kids grade 1-8"></div>
+        </div>
+    </section>
+
+    <!-- Admission CTA -->
+    <section class="container">
+        <div class="admission-cta">
+            <div class="admission-cta-content">
+                <h2 class="urdu-text">
+                    <span class="lang-ur">ابھی داخلہ حاصل کریں</span>
+                    <span class="lang-en">Enroll Your Child Now</span>
+                </h2>
+                <p class="urdu-text" style="margin-bottom: 25px; font-size: 1.2rem;">
+                    <span class="lang-ur">اپنے بچوں کے روشن اور محفوظ مستقبل کے لیے آج ہی داخلہ کروائیں۔</span>
+                    <span class="lang-en">Secure a bright future for your children with our expert guidance.</span>
+                </p>
+                <a href="#admission" class="btn btn-primary urdu-text" style="background: white; color: var(--primary-green); font-size: 1.2rem;">
+                    <span class="lang-ur">داخلہ فارم بھریں</span>
+                    <span class="lang-en">Fill Admission Form</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="section-padding container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px; align-items: start;">
+            <div>
+                <h2 class="urdu-text" style="font-size: 2.2rem; line-height: 1.4; margin-bottom: 20px;">
+                    <span class="lang-ur">شاندار نتائج: نمایاں پوزیشن ہولڈرز</span>
+                    <span class="lang-en">Exceptional Results: Position Holders</span>
+                </h2>
+                <div class="position-grid">
+                    <div class="position-card reveal">
+                        <div class="position-badge">1st</div>
+                        <div>
+                            <h4 class="urdu-text" style="font-size: 1.2rem;">محمد ثاقب اللہ</h4>
+                            <p class="urdu-text" style="font-size: 0.9rem; color: var(--text-light);">درجہ چہارم (حفظ)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: 0 20px 50px rgba(0,0,0,0.05); border: 1px solid #eee;" class="reveal reveal-delay-1">
+                <h3 class="urdu-text" style="margin-bottom: 25px; border-right: 4px solid var(--accent-gold); padding-right: 15px;">
+                    <span class="lang-ur">والدین کے لیے تسلی</span>
+                    <span class="lang-en">Peace of Mind for Parents</span>
+                </h3>
+                <p class="urdu-text" style="line-height: 1.9; font-size: 1.1rem; color: var(--text-light);">
+                    <span class="lang-ur">جدید دور میں جہاں تعلیم مہنگی اور تربیت مفقود ہوتی جا رہی ہے، مدرسہ بیت السلام آپ کو یقین دلاتا ہے کہ یہاں آپ کے بچے کی مکمل نگرانی کی جائے گی۔</span>
+                    <span class="lang-en">In this modern era, we ensure your child receives both high-quality education and moral training under constant supervision.</span>
+                </p>
+                <a href="#admission" class="btn btn-primary urdu-text" style="margin-top: 25px; width: 100%;">
+                    <span class="lang-ur">داخلہ کا مکمل طریقہ جانیں</span>
+                    <span class="lang-en">Learn Admission Process</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-padding bg-light reveal" id="faq" style="background-color: var(--bg-light);">
+        <div class="container">
+            <h2 class="section-title urdu-text">
+                <span class="lang-ur">عام طور پر پوچھے جانے والے سوالات</span>
+                <span class="lang-en">Frequently Asked Questions</span>
+            </h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question urdu-text"><span class="lang-ur">داخلہ کے لیے کیا دستاویزات درکار ہیں؟</span><span class="lang-en">What documents are required for admission?</span> <i class="fas fa-plus"></i></div>
+                    <div class="faq-answer urdu-text"><span class="lang-ur">داخلہ کے لیے طالب علم کا ب فارم، والد کے شناختی کارڈ کی کاپی اور سابقہ سکول کا رزلٹ کارڈ (اگر ہو) ضروری ہے۔</span><span class="lang-en">Student's B-Form, Father's CNIC copy, and previous school result card are required.</span></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question urdu-text"><span class="lang-ur">مدرسہ میں کون سا نصاب پڑھایا جاتا ہے؟</span><span class="lang-en">Which syllabus is followed in the Madrasah?</span> <i class="fas fa-plus"></i></div>
+                    <div class="faq-answer urdu-text"><span class="lang-ur">جی ہاں! ہمارے سکول سیکشن میں حکومت پنجاب کا منظور شدہ نصاب (PCTB) پڑھایا جاتا ہے۔</span><span class="lang-en">Yes! We follow the Punjab Government Syllabus (PCTB) in our school section.</span></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question urdu-text"><span class="lang-ur">کیا ہاسٹل میں رہنے والے بچوں کے لیے کھانے کا انتظام ہے؟</span><span class="lang-en">Is food provided for hostel students?</span> <i class="fas fa-plus"></i></div>
+                    <div class="faq-answer urdu-text"><span class="lang-ur">جی ہاں، ہاسٹل کے طلبہ کے لیے معیاری، تازہ اور صاف ستھرے کھانے کا بہترین انتظام موجود ہے۔</span><span class="lang-en">Yes, high-quality, fresh food is provided for hostel students.</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Form -->
+    <div id="admission" style="margin-top: 40px;"></div>
+    <section class="form-section">
+        <div class="container">
+            <h2 class="section-title urdu-text">
+                <span class="lang-ur">آن لائن داخلہ فارم</span>
+                <span class="lang-en">Online Admission Form</span>
+            </h2>
+            <div class="form-container">
+                <form id="admissionForm">
+                    <div class="form-group">
+                        <label for="studentName" class="form-label urdu-text">
+                            <span class="lang-ur">طالب علم کا نام</span>
+                            <span class="lang-en">Student Name</span>
+                        </label>
+                        <input type="text" id="studentName" class="form-control" placeholder="Name" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary form-submit urdu-text">
+                        <span class="lang-ur">جمع کروائیں (WhatsApp)</span>
+                        <span class="lang-en">Submit (WhatsApp)</span>
+                        <i class="fab fa-whatsapp"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col" style="padding-left: 30px;">
+                    <div class="logo">
+                        <img src="images/islamic_logo.png" alt="Logo" style="height: 70px; margin-bottom: 15px;">
+                        <div style="display: flex; flex-direction: column; align-items: start;">
+                            <span class="logo-text urdu-text" style="color: white; font-size: 1.8rem; line-height: 1.1;">
+                                <span class="lang-ur">مدرسہ بیت السلام</span>
+                                <span class="lang-en">Bait-ul-Salam</span>
+                            </span>
+                            <span style="font-family: 'Inter', sans-serif; font-size: 0.85rem; color: var(--accent-gold); letter-spacing: 1px;">Madrasah Bait-ul-Salam</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="urdu-text">
+                        <span class="lang-ur">رابطہ کی معلومات</span>
+                        <span class="lang-en">Contact Info</span>
+                    </h3>
+                    <ul class="urdu-text">
+                        <li style="display: flex; align-items: start; gap: 15px;">
+                            <i class="fas fa-map-marker-alt" style="color: var(--accent-gold); margin-top: 5px;"></i> 
+                            <div>
+                                <span class="urdu-text">
+                                    <span class="lang-ur">مین بائی پاس، کوٹ چھٹہ، ضلع ڈیرہ غازی خان</span>
+                                    <span class="lang-en">Main Bypass, Kot Chhutta, D.G Khan</span>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Madrasah Bait-ul-Salam. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/923353585999" target="_blank" class="floating-whatsapp"><i class="fab fa-whatsapp"></i></a>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
+for kids grade 1-8"></div>
                 <div class="card-content">
                     <h3 class="card-title urdu-text">سکول کی کلاسز (1 تا 8)</h3>
                     <p class="card-desc urdu-text">جدید تعلیمی نصاب، ماہر اساتذہ کے زیرِ نگرانی بہترین تعلیم۔</p>
@@ -301,28 +512,36 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="section-padding bg-light" style="background-color: #f4f7f6;">
+    <section class="section-padding bg-light reveal" id="faq" style="background-color: var(--bg-light);">
         <div class="container">
             <h2 class="section-title urdu-text">
-                عام طور پر پوچھے جانے والے سوالات
-                <span>Frequently Asked Questions</span>
+                <span class="lang-ur">عام طور پر پوچھے جانے والے سوالات</span>
+                <span class="lang-en">Frequently Asked Questions</span>
             </h2>
             <div class="faq-container">
                 <div class="faq-item">
-                    <div class="faq-question urdu-text">داخلہ کے لیے کیا دستاویزات درکار ہیں؟ <i class="fas fa-plus"></i></div>
-                    <div class="faq-answer urdu-text">داخلہ کے لیے طالب علم کا ب فارم، والد کے شناختی کارڈ کی کاپی اور سابقہ سکول کا رزلٹ کارڈ (اگر ہو) ضروری ہے۔</div>
+                    <div class="faq-question urdu-text" data-ur="داخلہ کے لیے کیا دستاویزات درکار ہیں؟" data-en="What documents are required for admission?">داخلہ کے لیے کیا دستاویزات درکار ہیں؟ <i class="fas fa-plus"></i></div>
+                    <div class="faq-answer urdu-text" data-ur="داخلہ کے لیے طالب علم کا ب فارم، والد کے شناختی کارڈ کی کاپی اور سابقہ سکول کا رزلٹ کارڈ (اگر ہو) ضروری ہے۔" data-en="Student's B-Form, Father's CNIC copy, and previous school result card (if applicable) are required.">داخلہ کے لیے طالب علم کا ب فارم، والد کے شناختی کارڈ کی کاپی اور سابقہ سکول کا رزلٹ کارڈ (اگر ہو) ضروری ہے۔</div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question urdu-text">کیا ہاسٹل میں رہنے والے بچوں کے لیے کھانے کا انتظام ہے؟ <i class="fas fa-plus"></i></div>
-                    <div class="faq-answer urdu-text">جی ہاں، ہاسٹل کے طلبہ کے لیے معیاری اور صاف ستھرے کھانے کا بہترین انتظام موجود ہے۔</div>
+                    <div class="faq-question urdu-text" data-ur="مدرسہ میں کون سا نصاب پڑھایا جاتا ہے؟" data-en="Which syllabus is followed in the Madrasah?">مدرسہ میں کون سا نصاب پڑھایا جاتا ہے؟ <i class="fas fa-plus"></i></div>
+                    <div class="faq-answer urdu-text" data-ur="جی ہاں! ہمارے سکول سیکشن میں حکومت پنجاب کا منظور شدہ نصاب (PCTB) پڑھایا جاتا ہے تاکہ بچے دینی تعلیم کے ساتھ عصری علوم میں بھی پیچھے نہ رہیں۔" data-en="Yes! In our school section, we follow the Punjab Government Syllabus (PCTB) so that children excel in both Islamic and modern education.">جی ہاں! ہمارے سکول سیکشن میں حکومت پنجاب کا منظور شدہ نصاب (PCTB) پڑھایا جاتا ہے تاکہ بچے دینی تعلیم کے ساتھ عصری علوم میں بھی پیچھے نہ رہیں۔</div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question urdu-text">کیا سکول سیکشن میں آکسفورڈ کا نصاب پڑھایا جاتا ہے؟ <i class="fas fa-plus"></i></div>
-                    <div class="faq-answer urdu-text">جی ہاں! ہمارے سکول سیکشن میں جدید تقاضوں کے مطابق آکسفورڈ کا نصاب اور کمپیوٹر کی تعلیم لازمی ہے۔</div>
+                    <div class="faq-question urdu-text"><span class="lang-ur">داخلہ کے لیے کیا دستاویزات درکار ہیں؟</span><span class="lang-en">What documents are required for admission?</span> <i class="fas fa-plus"></i></div>
+                    <div class="faq-answer urdu-text"><span class="lang-ur">داخلہ کے لیے طالب علم کا ب فارم، والد کے شناختی کارڈ کی کاپی اور سابقہ سکول کا رزلٹ کارڈ (اگر ہو) ضروری ہے۔</span><span class="lang-en">Student's B-Form, Father's CNIC copy, and previous school result card (if applicable) are required.</span></div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question urdu-text">کیا ہم اپنے بچے کی ماہانہ رپورٹ لے سکتے ہیں؟ <i class="fas fa-plus"></i></div>
-                    <div class="faq-answer urdu-text">بالکل! ہر ماہ کے آخر میں والدین اور اساتذہ کی میٹنگ ہوتی ہے جس میں بچے کی تعلیمی اور اخلاقی کارکردگی دکھائی جاتی ہے۔</div>
+                    <div class="faq-question urdu-text"><span class="lang-ur">مدرسہ میں کون سا نصاب پڑھایا جاتا ہے؟</span><span class="lang-en">Which syllabus is followed in the Madrasah?</span> <i class="fas fa-plus"></i></div>
+                    <div class="faq-answer urdu-text"><span class="lang-ur">جی ہاں! ہمارے سکول سیکشن میں حکومت پنجاب کا منظور شدہ نصاب (PCTB) پڑھایا جاتا ہے تاکہ بچے دینی تعلیم کے ساتھ عصری علوم میں بھی پیچھے نہ رہیں۔</span><span class="lang-en">Yes! In our school section, we follow the Punjab Government Syllabus (PCTB) so that children excel in both Islamic and modern education.</span></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question urdu-text"><span class="lang-ur">کیا ہاسٹل میں رہنے والے بچوں کے لیے کھانے کا انتظام ہے؟</span><span class="lang-en">Is food provided for hostel students?</span> <i class="fas fa-plus"></i></div>
+                    <div class="faq-answer urdu-text"><span class="lang-ur">جی ہاں، ہاسٹل کے طلبہ کے لیے معیاری، تازہ اور صاف ستھرے کھانے کا بہترین انتظام موجود ہے۔</span><span class="lang-en">Yes, high-quality, fresh, and clean food is provided for hostel students.</span></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question urdu-text"><span class="lang-ur">کیا ہم اپنے بچے کی ماہانہ رپورٹ لے سکتے ہیں؟</span><span class="lang-en">Can we get our child's monthly progress report?</span> <i class="fas fa-plus"></i></div>
+                    <div class="faq-answer urdu-text"><span class="lang-ur">بالکل! ہر ماہ کے آخر میں والدین اور اساتذہ کی میٹنگ ہوتی ہے جس میں بچے کی تعلیمی اور اخلاقی کارکردگی دکھائی جاتی ہے۔</span><span class="lang-en">Absolutely! At the end of every month, a parent-teacher meeting is held to discuss the academic and moral performance of the child.</span></div>
                 </div>
             </div>
         </div>
@@ -383,34 +602,42 @@
             <div class="footer-grid">
                 <div class="footer-col" style="padding-left: 30px;">
                     <div class="logo">
-                        <img src="images/islamic_logo.png" alt="Logo" style="filter: brightness(0) invert(1); height: 60px;">
+                        <img src="images/islamic_logo.png" alt="Logo" style="height: 70px; margin-bottom: 15px;">
                         <div style="display: flex; flex-direction: column; align-items: start;">
-                            <span class="logo-text urdu-text" style="color: white; font-size: 1.8rem; line-height: 1.1;">مدرسہ بیت السلام</span>
+                            <span class="logo-text urdu-text" style="color: white; font-size: 1.8rem; line-height: 1.1;">
+                                <span class="lang-ur">مدرسہ بیت السلام</span>
+                                <span class="lang-en">Bait-ul-Salam</span>
+                            </span>
                             <span style="font-family: 'Inter', sans-serif; font-size: 0.85rem; color: var(--accent-gold); letter-spacing: 1px;">Madrasah Bait-ul-Salam</span>
                         </div>
                     </div>
-                    <p class="urdu-text" style="font-size: 1rem; color: #e0e0e0; margin-bottom: 10px;">کوٹ چھٹہ کے علاقے میں دینی اور دنیاوی تعلیم کا بہترین اور واحد معیاری ادارہ۔</p>
-                    <p style="font-family: 'Inter', sans-serif; font-size: 0.85rem; color: #b0b0b0; line-height: 1.5; direction: ltr; text-align: left;">High-standard Islamic and modern education center.</p>
                 </div>
                 
                 <div class="footer-col" style="padding-left: 30px;">
-                    <h3 class="urdu-text">اہم لنکس</h3>
+                    <h3 class="urdu-text">
+                        <span class="lang-ur">اہم لنکس</span>
+                        <span class="lang-en">Quick Links</span>
+                    </h3>
                     <ul class="urdu-text">
-                        <li><a href="about.html"><i class="fas fa-chevron-left" style="font-size: 0.8rem; margin-left: 8px; color: var(--accent-gold);"></i> ہمارے بارے میں</a></li>
-                        <li><a href="programs.html"><i class="fas fa-chevron-left" style="font-size: 0.8rem; margin-left: 8px; color: var(--accent-gold);"></i> پروگرامز</a></li>
-                        <li><a href="#admission"><i class="fas fa-chevron-left" style="font-size: 0.8rem; margin-left: 8px; color: var(--accent-gold);"></i> آن لائن داخلہ</a></li>
-                        <li><a href="blog.html"><i class="fas fa-chevron-left" style="font-size: 0.8rem; margin-left: 8px; color: var(--accent-gold);"></i> بلاگ</a></li>
+                        <li><a href="about.html"><span class="lang-ur">ہمارے بارے میں</span><span class="lang-en">About Us</span></a></li>
+                        <li><a href="programs.html"><span class="lang-ur">پروگرامز</span><span class="lang-en">Programs</span></a></li>
+                        <li><a href="#admission"><span class="lang-ur">داخلہ</span><span class="lang-en">Admission</span></a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-col">
-                    <h3 class="urdu-text">رابطہ کی معلومات</h3>
+                    <h3 class="urdu-text">
+                        <span class="lang-ur">رابطہ کی معلومات</span>
+                        <span class="lang-en">Contact Info</span>
+                    </h3>
                     <ul class="urdu-text">
                         <li style="display: flex; align-items: start; gap: 15px;">
                             <i class="fas fa-map-marker-alt" style="color: var(--accent-gold); margin-top: 5px;"></i> 
                             <div>
-                                <span class="urdu-text">مین بائی پاس، کوٹ چھٹہ، ضلع ڈیرہ غازی خان</span>
-                                <p style="font-size: 0.8rem; color: #b0b0b0; font-family: 'Inter', sans-serif;">Kot Chhutta, D.G Khan</p>
+                                <span class="urdu-text">
+                                    <span class="lang-ur">مین بائی پاس، کوٹ چھٹہ، ضلع ڈیرہ غازی خان</span>
+                                    <span class="lang-en">Main Bypass, Kot Chhutta, D.G Khan</span>
+                                </span>
                             </div>
                         </li>
                         <li style="display: flex; align-items: center; gap: 15px; direction: ltr; justify-content: flex-end; margin-top: 15px;">
@@ -423,7 +650,10 @@
             
             <div class="footer-bottom" style="text-align: center; padding-top: 25px; border-top: 1px solid rgba(255,255,255,0.1); font-family: 'Inter', sans-serif; font-size: 0.9rem; color: rgba(255,255,255,0.6); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px;">
                 <p>&copy; 2026 Madrasah Bait-ul-Salam. All Rights Reserved.</p>
-                <p class="urdu-text" style="font-size: 0.9rem;">تعمیر و ترقی، اسلامی اقدار کے ساتھ</p>
+                <p class="urdu-text" style="font-size: 0.9rem;">
+                    <span class="lang-ur">تعمیر و ترقی، اسلامی اقدار کے ساتھ</span>
+                    <span class="lang-en">Progress with Islamic Values</span>
+                </p>
             </div>
         </div>
     </footer>

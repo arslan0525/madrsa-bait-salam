@@ -10,24 +10,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Anek+Arabic:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
     <header>
         <div class="container">
             <nav>
                 <div class="logo">
-                    <img src="images/islamic_logo.png" alt="Madrasah Bait-ul-Salam Logo">
+                    <img src="images/islamic_logo.png" alt="Logo">
                     <div style="display: flex; flex-direction: column; align-items: start;">
-                        <span class="logo-text urdu-text" style="line-height: 1.2;">مدرسہ بیت السلام</span>
+                        <span class="logo-text urdu-text" style="line-height: 1.2;" data-ur="مدرسہ بیت السلام" data-en="Bait-ul-Salam">مدرسہ بیت السلام</span>
                         <span style="font-size: 0.75rem; color: var(--text-light); font-weight: 500; font-family: 'Inter', sans-serif;">Madrasah Bait-ul-Salam</span>
                     </div>
                 </div>
+                <div class="nav-controls">
+                    <button id="themeToggle" class="theme-toggle" title="Toggle Theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button id="langToggle" class="lang-toggle" title="Switch Language">
+                        <i class="fas fa-globe"></i> English
+                    </button>
+                </div>
                 <div class="menu-toggle"><i class="fas fa-bars"></i></div>
                 <ul class="nav-links urdu-text">
-                    <li><a href="index.html">ہوم</a></li>
-                    <li><a href="about.html">ہمارے بارے میں</a></li>
-                    <li><a href="programs.html">پروگرامز</a></li>
-                    <li><a href="blog.html" class="active">بلاگ</a></li>
-                    <li><a href="contact.html">رابطہ کریں</a></li>
+                    <li><a href="index.html"><span class="lang-ur">ہوم</span><span class="lang-en">Home</span></a></li>
+                    <li><a href="about.html"><span class="lang-ur">ہمارے بارے میں</span><span class="lang-en">About Us</span></a></li>
+                    <li><a href="programs.html"><span class="lang-ur">پروگرامز</span><span class="lang-en">Programs</span></a></li>
+                    <li><a href="blog.html" class="active"><span class="lang-ur">بلاگ</span><span class="lang-en">Blog</span></a></li>
+                    <li><a href="contact.html"><span class="lang-ur">رابطہ کریں</span><span class="lang-en">Contact</span></a></li>
                 </ul>
             </nav>
         </div>
@@ -35,40 +42,36 @@
 
     <section class="page-header">
         <div class="container">
-            <h1 class="urdu-text">تازہ ترین بلاگز اور خبریں</h1>
-            <p style="font-family: 'Inter', sans-serif;">Announcements & Educational Articles</p>
+            <h1 class="urdu-text">
+                <span class="lang-ur">تازہ ترین بلاگز اور خبریں</span>
+                <span class="lang-en">Latest Blogs & News</span>
+            </h1>
+            <p style="font-family: 'Inter', sans-serif;">
+                <span class="lang-ur">اعلانات اور تعلیمی مضامین</span>
+                <span class="lang-en">Announcements & Educational Articles</span>
+            </p>
         </div>
     </section>
 
     <section class="section-padding container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+            <div class="card reveal" style="background: var(--card-bg);">
+                <div class="card-img-wrap" style="height: 180px; background: var(--primary-green);">
                     <i class="fas fa-child"></i>
                 </div>
-                <div class="card-content">
-                    <h3 class="card-title urdu-text" style="font-size: 1.3rem;">بچوں کی اسلامی تربیت</h3>
-                    <p class="card-desc urdu-text">اسمارٹ فون کے دور میں بچوں کی اخلاقی اور روحانی تربیت کیسے کی جائے؟</p>
-                    <a href="#" class="btn btn-secondary urdu-text btn-sm" style="padding: 8px 15px;">پڑھیں</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-img-wrap" style="height: 180px; background: var(--secondary-green); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">
-                    <i class="fas fa-balance-scale"></i>
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title urdu-text" style="font-size: 1.3rem;">دینی اور دنیاوی تعلیم کا توازن</h3>
-                    <p class="card-desc urdu-text">ایک کامیاب مسلمان بننے کے لیے دونوں علوم کی مساوی اہمیت کیا ہے؟</p>
-                    <a href="#" class="btn btn-secondary urdu-text btn-sm" style="padding: 8px 15px;">پڑھیں</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-img-wrap" style="height: 180px; background: #666; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">
-                    <i class="fas fa-desktop"></i>
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title urdu-text" style="font-size: 1.3rem;">کمپیوٹر سکلز کی اہمیت</h3>
-                    <p class="card-desc urdu-text">آج کے دور میں مدارس کے طلبہ کے لیے کمپیوٹر کی تعلیم کیوں لازمی ہے؟</p>
-                    <a href="#" class="btn btn-secondary urdu-text btn-sm" style="padding: 8px 15px;">پڑھیں</a>
+                <div class="card-content" style="padding: 20px;">
+                    <h3 class="card-title urdu-text">
+                        <span class="lang-ur">بچوں کی اسلامی تربیت</span>
+                        <span class="lang-en">Islamic Grooming of Children</span>
+                    </h3>
+                    <p class="card-desc urdu-text">
+                        <span class="lang-ur">اسمارٹ فون کے دور میں بچوں کی اخلاقی اور روحانی تربیت کیسے کی جائے؟</span>
+                        <span class="lang-en">Moral and spiritual grooming in the smartphone era.</span>
+                    </p>
+                    <a href="index.html#admission" class="btn btn-secondary urdu-text">
+                        <span class="lang-ur">پڑھیں</span>
+                        <span class="lang-en">Read More</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -79,8 +82,23 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col" style="padding-left: 30px;">
+                    <div class="logo">
+                        <img src="images/islamic_logo.png" alt="Logo" style="height: 70px; margin-bottom: 15px;">
+                        <div style="display: flex; flex-direction: column; align-items: start;">
+                            <span class="logo-text urdu-text" style="color: white; font-size: 1.8rem; line-height: 1.1;">
+                                <span class="lang-ur">مدرسہ بیت السلام</span>
+                                <span class="lang-en">Bait-ul-Salam</span>
+                            </span>
+                            <span style="font-family: 'Inter', sans-serif; font-size: 0.85rem; color: var(--accent-gold); letter-spacing: 1px;">Madrasah Bait-ul-Salam</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 Madrasah Bait-ul-Salam. All Rights Reserved.</p>
             </div>

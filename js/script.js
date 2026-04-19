@@ -1,4 +1,56 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // --- Theme & Language Management ---
+  const themeToggle = document.getElementById('themeToggle');
+  const langToggle = document.getElementById('langToggle');
+  const body = document.body;
+  const html = document.documentElement;
+
+  // Load saved preferences
+  const savedTheme = localStorage.getItem('theme') || 'light';
+  const savedLang = localStorage.getItem('lang') || 'ur';
+
+  if (savedTheme === 'dark') body.classList.add('dark-theme');
+  setLanguage(savedLang);
+
+  // Theme Toggle Logic
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      body.classList.toggle('dark-theme');
+      const currentTheme = body.classList.contains('dark-theme') ? 'dark' : 'light';
+      localStorage.setItem('theme', currentTheme);
+      updateThemeIcon(currentTheme);
+    });
+  }
+
+  function updateThemeIcon(theme) {
+    const icon = themeToggle.querySelector('i');
+    if (theme === 'dark') {
+      icon.classList.replace('fa-moon', 'fa-sun');
+    } else {
+      icon.classList.replace('fa-sun', 'fa-moon');
+    }
+  }
+
+  // Language Toggle Logic
+  if (langToggle) {
+    langToggle.addEventListener('click', () => {
+      const currentLang = html.getAttribute('lang') === 'ur' ? 'en' : 'ur';
+      setLanguage(currentLang);
+      localStorage.setItem('lang', currentLang);
+    });
+  }
+
+  function setLanguage(lang) {
+    html.setAttribute('lang', lang);
+    html.setAttribute('dir', lang === 'ur' ? 'rtl' : 'ltr');
+    
+    langToggle.innerHTML = lang === 'ur' 
+      ? '<i class="fas fa-globe"></i> English' 
+      : '<i class="fas fa-globe"></i> اردو';
+  }
+
+  // --- UI Interactions ---
+
   // Mobile Menu Toggle
   const menuToggle = document.querySelector('.menu-toggle');
   const navLinks = document.querySelector('.nav-links');
@@ -31,12 +83,8 @@ document.addEventListener('DOMContentLoaded', () => {
   faqItems.forEach(item => {
     const question = item.querySelector('.faq-question');
     question.addEventListener('click', () => {
-      // Toggle current item
       const isActive = item.classList.contains('active');
-      
-      // Close all other items (optional, but cleaner)
       faqItems.forEach(otherItem => otherItem.classList.remove('active'));
-      
       if (!isActive) {
         item.classList.add('active');
       }
@@ -50,33 +98,37 @@ document.addEventListener('DOMContentLoaded', () => {
     admissionForm.addEventListener('submit', function(e) {
       e.preventDefault();
 
-      // Gather field values
       const name = document.getElementById('studentName').value.trim();
       const fatherName = document.getElementById('fatherName').value.trim();
       const program = document.getElementById('programOptions').value;
       const phone = document.getElementById('whatsappNumber').value.trim();
       const city = document.getElementById('city').value.trim();
 
-      // Basic validation
       if(!name || !fatherName || !phone || !city) {
-        alert("براہ کرم تمام فیلڈز پُر کریں۔"); // Please fill all fields
+        const msg = html.getAttribute('lang') === 'ur' ? "براہ کرم تمام فیلڈز پُر کریں۔" : "Please fill all fields.";
+        alert(msg);
         return;
       }
 
-      // Format message exactly as requested
-      const message = `السلام علیکم،\nمیں داخلہ لینا چاہتا ہوں:\n\nنام: ${name}\nوالد کا نام: ${fatherName}\nپروگرام: ${program}\nواٹس ایپ نمبر: ${phone}\nشہر: ${city}`;
+      const message = lang === 'ur' 
+        ? `السلام علیکم،\nمیں داخلہ لینا چاہتا ہوں:\n\nنام: ${name}\nوالد کا نام: ${fatherName}\nپروگرام: ${program}\nواٹس ایپ نمبر: ${phone}\nشہر: ${city}`
+        : `Assalam-o-Alaikum,\nI want to apply for admission:\n\nName: ${name}\nFather's Name: ${fatherName}\nProgram: ${program}\nWhatsApp: ${phone}\nCity: ${city}`;
 
-      // Encode for URI
       const encodedMessage = encodeURIComponent(message);
-      
-      // Madrasa WhatsApp Number
       const targetPhone = "923353585999";
-      
-      // WhatsApp API URL
       const whatsappUrl = `https://wa.me/${targetPhone}?text=${encodedMessage}`;
 
-      // Open WhatsApp in new tab
-      window.open(whatsappUrl, '_blank');
+  // --- Scroll Animations ---
+  const revealElements = document.querySelectorAll('.reveal');
+  
+  const revealOnScroll = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+        // observer.unobserve(entry.target); // Optional: keep animating or just once
+      }
     });
-  }
+  }, { threshold: 0.15 });
+
+  revealElements.forEach(el => revealOnScroll.observe(el));
 });
