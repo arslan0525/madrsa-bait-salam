@@ -25,6 +25,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // FAQ Accordion Toggle
+  const faqItems = document.querySelectorAll('.faq-item');
+  
+  faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    question.addEventListener('click', () => {
+      // Toggle current item
+      const isActive = item.classList.contains('active');
+      
+      // Close all other items (optional, but cleaner)
+      faqItems.forEach(otherItem => otherItem.classList.remove('active'));
+      
+      if (!isActive) {
+        item.classList.add('active');
+      }
+    });
+  });
+
   // WhatsApp Admission Form Logic
   const admissionForm = document.getElementById('admissionForm');
   
